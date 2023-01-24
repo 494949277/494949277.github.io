@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <title>sorry</title>
+
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
 </head>
 <body>
     <form action="表单综合案例.html">
-        <h1>提交失败！作者还不会前后端交互。</h1>
-        <h2>请返回！谢谢！</h2>
-        <button style="width:100px;height:100px;">返回</button>
+        <h1 align="center"><font color="red">提交失败！</font>作者还不会前后端交互。</h1>
+        <h2 align="center">请返回！谢谢！</h2>
+        <div align="center">
+            <button style="width:500px;height:100px;">返回</button>
+        </div>
     </form>
+    <div align="center">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.d50b9e2235e30cf524d71d9539620daf?rik=%2b5OM3QYHbSdaZg&riu=http%3a%2f%2fwww.yutudou.com%2fuploads%2fallimg%2f171023%2f1-1G023224U5.jpg&ehk=kVZPQUv96Ic2ndxxfFFUslJBZSOUHXAJJCZsVbK9YBw%3d&risl=&pid=ImgRaw&r=0" 
+            alt="" width="300" height="300">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.d50b9e2235e30cf524d71d9539620daf?rik=%2b5OM3QYHbSdaZg&riu=http%3a%2f%2fwww.yutudou.com%2fuploads%2fallimg%2f171023%2f1-1G023224U5.jpg&ehk=kVZPQUv96Ic2ndxxfFFUslJBZSOUHXAJJCZsVbK9YBw%3d&risl=&pid=ImgRaw&r=0" 
+            alt="" width="300" height="300">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.d50b9e2235e30cf524d71d9539620daf?rik=%2b5OM3QYHbSdaZg&riu=http%3a%2f%2fwww.yutudou.com%2fuploads%2fallimg%2f171023%2f1-1G023224U5.jpg&ehk=kVZPQUv96Ic2ndxxfFFUslJBZSOUHXAJJCZsVbK9YBw%3d&risl=&pid=ImgRaw&r=0" 
+            alt="" width="300" height="300">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.d50b9e2235e30cf524d71d9539620daf?rik=%2b5OM3QYHbSdaZg&riu=http%3a%2f%2fwww.yutudou.com%2fuploads%2fallimg%2f171023%2f1-1G023224U5.jpg&ehk=kVZPQUv96Ic2ndxxfFFUslJBZSOUHXAJJCZsVbK9YBw%3d&risl=&pid=ImgRaw&r=0" 
+            alt="" width="300" height="300">
+    </div>
 </body>
 </html>

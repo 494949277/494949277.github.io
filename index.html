@@ -5,7 +5,7 @@
     <!-- <meta http-equiv="X-UA-Compatible"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
     <title>社区疫情流调信息表</title>
-	<script type="text/javascript">
+    <script type="text/javascript">
         var phoneWidth =  parseInt(window.screen.width);
         var phoneScale = phoneWidth/640;
         var ua = navigator.userAgent;
@@ -26,9 +26,10 @@
     <h1 align="center">社区疫情流调信息表</h1>
     <p>&emsp;&emsp;请大家做好个人防护，如果去过风险地区，请及时向社区和公司报备；如您的身体状况异常
         （出现新冠病毒典型症状，如发热、咳嗽等），请及时上报异常情况，并按照通知，前往指定医院进行核酸检测，
-        在去检测的路上请戴好口罩，做好个人防护，等待检测结果期间勿前往人多汇聚的地方。
+        在去检测的路上请<b>戴好口罩</b>，做好个人防护，<b>等待检测结果期间勿前往人多汇聚的地方</b>。
     </p>
 
+  <div>
     <form action="1.html" target="_self">
         <fieldset>
             <legend>基本信息</legend>
@@ -112,9 +113,15 @@
             <label for=""><h4>4.个人意见</h4></label>
             <textarea name="" id="" cols="60" rows="5"></textarea>
         </fieldset>
-        <input type="submit" value="上传信息" >
-        <input type="reset" value="清空信息">
-        <input type="image" src="../img/300.png" width="200" height="120" align="center">
+        <div align="center">
+            <input type="submit" value="上传信息" style="width:100px;height:50px;margin-right:50px;">
+            <input type="reset" value="清空信息" style="width:100px;height:50px;">
+        </div>
+        <br>
+        <div align="center">
+            <input type="image" src="img/300.png" width="200" height="120" align="center">
+        </div>
     </form>
+  </div>
 </body>
 </html>
