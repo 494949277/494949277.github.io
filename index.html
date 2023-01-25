@@ -2,126 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
-    <title>社区疫情流调信息表</title>
-    <script type="text/javascript">
-        var phoneWidth =  parseInt(window.screen.width);
-        var phoneScale = phoneWidth/640;
-        var ua = navigator.userAgent;
-        if (/Android (\d+\.\d+)/.test(ua)){
-            var version = parseFloat(RegExp.$1);
-            if(version>2.3){
-                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-            }else{
-                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
-            }
-        } else {
-            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
-        }
-    </script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李仁权的黄色网站</title>
 </head>
 <body>
-    <h1 align="center">社区疫情流调信息表</h1>
-    <p>&emsp;&emsp;请大家做好个人防护，如果去过风险地区，请及时向社区和公司报备；如您的身体状况异常
-        （出现新冠病毒典型症状，如发热、咳嗽等），请及时上报异常情况，并按照通知，前往指定医院进行核酸检测，
-        在去检测的路上请<b>戴好口罩</b>，做好个人防护，<b>等待检测结果期间勿前往人多汇聚的地方</b>。
-    </p>
-
-  <div>
-    <form action="1.html" target="_self">
-        <fieldset>
-            <legend>基本信息</legend>
-            <label for="name"><h4>1.您的姓名</h4></label>
-            <input type="text" id="name">
-
-            <label for="tel"><h4>2.您的手机号</h4></label>
-            <input type="text" id="tel">
-
-            <h4>3.您的性别</h4>
-            <input type="radio" name="gender" id="man" checked><label for="man">男</label>
-            <input type="radio" name="gender" id="woman"><label for="woman">女</label>
-            <input type="radio" name="gender" id="manorwoman" disabled><label for="manorwoman">保密</label>
-
-            <h4>4.家庭地址</h4>
-            <select name="" id="">
-                <option value="">==省/直辖市==</option>
-            </select>
-            <select name="" id="">
-                <option value="">==市/区==</option>
-            </select>
-            <select name="" id="">
-                <option value="">==县==</option>
-            </select>
-            <select name="" id="">
-                <option value="">==乡==</option>
-            </select>
-            <br><br>
-            <textarea name="" id="" cols="65" rows="4" placeholder="请输入详细地址"></textarea>
-
-            <h4>5.您现在的身体状况</h4>
-            <input type="checkbox">健康<br>
-            <input type="checkbox">发热<br>
-            <input type="checkbox">干咳<br>
-            <input type="checkbox">乏力<br>
-            <input type="checkbox">呼吸困难<br>
-            <input type="checkbox">咽痛<br>
-            <input type="checkbox">胸痛<br>
-            <input type="checkbox">肌肉酸痛/关节痛<br>
-            <input type="checkbox">呕吐<br>
-            <input type="checkbox">腹泻<br>
-            <input type="checkbox">味觉异常<br>
-            <input type="checkbox">嗅觉异常<br>
-
-            <h4>6.您的健康码颜色目前是</h4>
-            <input type="radio" name="color" id="green"><label for="green">绿色</label>
-            <input type="radio" name="color" id="yellow"><label for="yellow">黄色</label>
-            <input type="radio" name="color" id="red"><label for="red">红色</label>
-
-            <h4>7.您是否在14天内有过中高风险地区旅居史，或与确诊人员有过较为密切的接触？</h4>
-            <input type="radio" name="close" id="yes"><label for="yes">是</label>
-            <input type="radio" name="close" id="no"><label for="no">否</label>
-            
-            <h4>8.疫苗接种情况</h4>
-            <input type="radio" name="vaccines" id="one"><label for="one">已接种第一针</label>
-            <input type="radio" name="vaccines" id="two"><label for="two">已接种第二针</label>
-            <input type="radio" name="vaccines" id="three"><label for="three">已接种第三针</label>
-
-        </fieldset>
-        <fieldset>
-            <legend>保密信息</legend>
-            <h4>1.身份证信息</h4>
-            正面：<input type="file">
-            <br><br>
-            反面：<input type="file">
-
-            <h4>2.学历信息（最高）</h4>
-            <select name="" id="">
-                <option value="">==选择学历==</option>
-                <option value="">研究生</option>
-                <option value="">本科</option>
-                <option value="">大专</option>
-                <option value="">高中</option>
-                <option value="">高中以下</option>
-            </select>
-
-            <h4>3.是否服兵役</h4>
-            <input type="radio" name="ismilitary" id="yesyes"><label for="yesyes">是</label>
-            <input type="radio" name="ismilitary" id="nono"><label for="nono">否</label>
-
-            <label for=""><h4>4.个人意见</h4></label>
-            <textarea name="" id="" cols="60" rows="5"></textarea>
-        </fieldset>
-        <div align="center">
-            <input type="submit" value="上传信息" style="width:100px;height:50px;margin-right:50px;">
-            <input type="reset" value="清空信息" style="width:100px;height:50px;">
-        </div>
-        <br>
-        <div align="center">
-            <input type="image" src="img/300.png" width="200" height="120" align="center">
-        </div>
-    </form>
-  </div>
+    <h1 align="center"><b><font color="blue">李仁权</font><font color="red">李仁权</font><font color="green">李仁权</font>
+        <font color="blueviolet">李仁权</font><font color="blue">李仁权</font><font color="red">李仁权</font><font color="green">李仁权</font>
+        <font color="blueviolet">李仁权</font></b></h1>
+    <h1 align="center" style="color: yellow;">黄色网站！</h1>
+    <h1 align="center" style="color: yellow;">黄色网站！</h1>
+    <h1 align="center" style="color: yellow;">黄色网站！</h1>
+    <h1 align="center" style="color: yellow;">黄色网站！</h1>
+    <h1 align="center" style="color: yellow;">黄色网站！</h1>
 </body>
 </html>
