@@ -1,0 +1,72 @@
+#Header{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #0092d7;
+}
+
+    #nav{
+        width: 1032px;
+        margin: 0 auto;
+
+    }
+
+    .menubar{
+        margin: 0 auto;
+        font-family: "微软雅黑";
+        font-size: 20px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+    }
+
+#DY{
+    width: 1032px;
+    height: 108px;
+    margin: 0px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+}
+
+#Content{
+    width: 1032px;
+    margin: 0px auto;
+
+}
+    #C1{
+        height: 330px;
+    }
+
+#Content .C2{
+    width: 1032px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #0092d7;
+}
+#Content .C3{
+    width: 1022px;
+    height: 880px;
+    border: 5px solid #0092d7;
+    background:url(../img/c3_bg_02.png);
+}
+#Content .c3_1{
+    text-align: left;
+    height: 220px;
+}
+#Content .c3_r{
+    text-align: right;
+    height: 220px;
+}
+
+/* 尾部样式 */
+    .Bottom{
+        width: 100%;
+        height: 110px;
+        margin: 0px auto;
+        background-color: #0092d7;
+    }
+    .Bottom.bc{
+        width: 1032px;
+        height: 110px;
+        margin: 0px auto;
+    }
