@@ -13,23 +13,6 @@
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
-    <!-- 通过js实现屏幕自适应 -->
-    <script type="text/javascript">
-        var phoneWidth =  parseInt(window.screen.width);
-        var phoneScale = phoneWidth/640;
-        var ua = navigator.userAgent;
-        if (/Android (\d+\.\d+)/.test(ua)){
-            var version = parseFloat(RegExp.$1);
-            if(version>2.3){
-                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-            }else{
-                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
-            }
-        } else {
-            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
-        }
-    </script>
-    
     
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
