@@ -6,7 +6,7 @@ body{
     width: 867px;
     margin: 0 auto;
     font-size: 12px;
-    color: #333;
+    color: #666;
     /* background: black; */
 }
 ul{
@@ -20,7 +20,12 @@ img{
 #header{
     width: 867px;
     height: 323px;
-    border: 1px solid black;
+}
+#header embed{
+    display: block;
+    width: 867px;
+    height: 323px;
+    
 }
 #nav{
     width: 867px;
@@ -67,6 +72,7 @@ img{
 #sidebar{
     width: 251px;
     height: 490px;
+    background: url(../images/weline.gif) no-repeat right 54%;
     float: left;
 }
 #sidebar h1{
@@ -83,6 +89,7 @@ img{
     margin-left: 16px;
 }
 #sidebar ul{
+    padding-top: 10px;
     line-height: 180%;
     text-indent: 20px;
 }
@@ -103,21 +110,126 @@ img{
 #news{
     width: 313px;
     height: 300px;
+    background: #fff;
     float: left;
+}
+#news h1{
+    width: 123px;
+    height: 27px;
+    font-size: 100%; /*会继承body的12px，写100%为了防止浏览器bug*/
+    background: url(../images/news.gif) no-repeat;
+    text-indent: -9999px;/* 把字去掉*/
+    margin-top:20px;
+    margin-left: 20px;
+}
+#news ul{
+    line-height: 160%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: url(../images/weline.gif) repeat-y right top;
+}
+#news ul li{
+    padding-left: 15px;
+}
+#news ul li.date{
+    color: orange;
+    font-weight: bold;
+    background: url(../images/ico.gif) no-repeat left center;
+}
+#news ul li a{
+    display: inline-block;
+    width: 65px;
+    height: 11px;
+    background: url(../images/more.gif) no-repeat left center;
+    margin-top: 5px;
 }
 #about{
     width: 303px;
     height: 300px;
+    background: #fff;
     float: left;
+}
+#about h1{
+    width: 127px;
+    height: 26px;
+    font-size: 100%; /*会继承body的12px，写100%为了防止浏览器bug*/
+    background: url(../images/about.gif) no-repeat;
+    text-indent: -9999px;/* 把字去掉*/
+    margin-top:20px;
+    margin-left: 20px;
+}
+#about img{
+    display: block;
+    margin-left: 16px;
+}
+#about p{
+    width: 235px;
+    margin-left: 23px;
+    color: #666;
+    line-height: 150%;
+}
+#about a{
+    display: inline-block;
+    width: 65px;
+    height: 11px;
+    background: url(../images/more.gif) no-repeat left center;
+    margin-top: 8px;
+    margin-left: 22px;
 }
 #estate{
     width: 616px;
     height: 190px;
     float: left;
 }
+#estate #escon{
+    width: 533px;
+    height: 189px;
+    margin-left: 33px;
+    border-top: 1px solid #ccc;
+}
+#estate #escon img{
+    display: block;/*让对象成为块级元素*/
+    float: left;
+    padding-top: 15px;
+}
+#estate #escon dl{
+    float: left;
+    width: 288px;
+    
+}
+#estate #escon dl dt{
+    width: 117px;
+    height: 30px;
+    font-size: 100%; /*会继承body的12px，写100%为了防止浏览器bug*/
+    background: url(../images/estate1.gif) no-repeat;
+    text-indent: -9999px;/* 把字去掉*/
+    margin-top:20px;
+    margin-left: 20px;
+}
+#estate #escon dl dd{
+    padding: 5px 0 2px 20px;
+}
+#estate #escon dl dd a{
+    display: inline-block;
+    width: 65px;
+    height: 11px;
+    background: url(../images/more.gif) no-repeat left center;
+    margin-top: 8px;
+}
 #footer{
     clear: both;
     width: 867px;
     height: 110px;
-    border: 1px solid black;
+    background: url(../images/bg.gif);
+}
+#footer img{
+    padding-top: 10px;
+}
+#footer p{
+    color: #ccc;
+    text-align: right;
+    font-family: Tahoma;
+    font-size: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
