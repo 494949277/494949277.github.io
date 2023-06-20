@@ -1,0 +1,61 @@
+.box{
+    border-radius: 20px;
+}
+.box_img{
+    border-radius: 20px 20px 0 0 ;
+}
+.box_img img{
+    transition: all 0.8s;
+}
+.box_img img:hover{
+    transform: scale(1.2);
+}
+.name a{
+    font-weight: bold;
+    color: black;
+}
+.name a:hover{
+    color: rgb(16,136,242);
+}
+.shebei a{
+    color: rgb(16,136,242);
+    font-size: 8px;
+}
+.shebei a:hover{
+    text-decoration: underline;
+}
+.font{
+    color: #9e9e9e;
+    font-size: 8px;
+}
+
+.num{
+    color: #9e9e9e;
+    font-size: 8px;
+    vertical-align:super;/*垂直对齐文本的上标*/
+    margin-right: 20px;
+}
+
+.date{
+    color: #9e9e9e;
+    font-size: 8px;
+    float: right;
+    margin-top: 5px;
+}
+.xinxi a{
+    color: rgb(53, 52, 52);
+    font-size: 13px;
+}
+.xinxi a span{
+    vertical-align:super;
+}
+.xinxi a:hover{
+    color: rgb(16,136,242);
+}
+span{
+    cursor: default;
+}
+
+
+
+

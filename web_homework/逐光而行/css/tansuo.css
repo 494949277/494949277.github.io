@@ -1,0 +1,76 @@
+.nav2{
+    height: 62px;
+    background: white;
+    clear: both;
+    text-align: center;
+}
+.nav2Title{
+    margin: 0 auto;
+    line-height: 62px;
+}
+.nav2Title a{
+    margin-right: 25px;
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    height: 60px;
+    display: inline-block;
+}
+.nav2Title a:hover{
+    color:rgb(16,136,242) ;
+}
+.tansuo_out{
+    background:rgb(247,248,249) ;
+    height: 2000px;
+    padding-top: 20px;
+    
+}
+.tansuo_out_1{
+    float: left;
+    width: 385px;
+    /* height: 2000px; */
+    margin-left: 160px;
+}
+.tansuo_out_2{
+    float: left;
+    width: 385px;
+    /* height: 2000px; */
+    margin-left: 15px;
+}
+.tansuo_out_3{
+    float: left;
+    width: 385px;
+    /* height: 2000px; */
+    margin-left: 15px;
+}
+.tansuo1{
+    width: 385px;
+    height: 220px;
+    /* background: rgb(76, 223, 76); */
+    margin-bottom: 15px;
+    clear: both;
+}
+.tansuo1 img{
+    width: 385px;
+    height: 220px;
+}
+.tansuo2{
+    width: 385px;
+    height: 280px;
+    margin-bottom: 15px;
+    /* background: rgb(229, 255, 0); */
+    clear: both;
+}
+.tansuo2 img{
+    width: 385px;
+    height: 280px;
+}
+.tansuo3{
+    width: 385px;
+    height: 450px;
+    margin-bottom: 15px;
+    /* background: rgb(225, 0, 255); */
+}
+.tansuo3 img{
+    width: 385px;
+    height: 450px;
+}
